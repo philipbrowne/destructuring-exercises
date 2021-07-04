@@ -20,9 +20,7 @@ var temp = arr[0];
 // arr[1] = temp;
 
 // Write an ES2015 Version
-[arr[1], temp] = [temp, arr[1]]
+[arr[0], arr[1]] = [arr[1], arr[0]]
 
-const raceResults = ([first, second, third, ...rest]) => {
-    return { first, second, third, rest }
-};
+const raceResults = ([first, second, third, ...rest]) => ({ first, second, third, rest });
 
